@@ -19,16 +19,14 @@ function randomWords(num) {
 }
 randomWords(15)
 function checkInput() {
-
-    // let inputText = document.querySelector('textarea');
     let quoteDisplay = Array.from(document.querySelectorAll('.quoteDisplay span'));
-    
+
     for (let i = 0; i < quoteDisplay.length; i++) {
 
         inputText.addEventListener('input', function () {
-            
+
             if (inputText.value[i]) {
-                if(inputText.value.length == 1){
+                if (inputText.value.length == 1) {
                     startTimer()
                 }
                 if (inputText.value[i] === quoteDisplay[i].textContent) {
@@ -45,13 +43,13 @@ function checkInput() {
             }
 
         });
-        
+
     }
     console.log(quoteDisplay.length)
     // if(inputText.value[quoteDisplay.length].classList == 'correct'){
     //     console.log('help')
     // }
-    
+
 }
 checkInput()
 
